@@ -1,0 +1,20 @@
+/* nav fix */
+*:first-child+html #nav li {
+    width: 24.9%;
+}
+
+/* self-clear floats */
+* html .group { /* IE6 */
+    height: 1%;
+}
+
+*:first-child+html .group { /* IE7 */
+    min-height: 1px;
+}
+
+.browse-happy{
+    text-align: center;
+    font-size: 2em;
+    background: #FF0A95;
+    color:#fff;
+}
