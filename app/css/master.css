@@ -259,8 +259,7 @@ p {
 }
 
 .contacts li {
-    height: 40px;
-    line-height: 40px;
+    line-height: 39px;
 }
 
 .contacts li:first-child {
@@ -275,6 +274,9 @@ p {
     color: #fff;
     text-decoration: none;
     vertical-align: middle;
+    max-width: 150px;
+    display: inline-block;
+    word-wrap: break-word;
 }
 
 .contacts .icon {
@@ -288,6 +290,7 @@ p {
     font-size: 21px;
     padding: 4px 0 0 21px;
     background: #3ba8c0;
+    line-height: 36px;
 }
 
 .contacts .email,
