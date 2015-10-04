@@ -191,12 +191,9 @@ p {
     margin: 0;
 }
 
-/*.menu li {*/
-    /*border-bottom: solid 2px #3ba8c0;*/
-/*}*/
-
 .menu li.active {
     background: #3ba8c0;
+    margin-top: -2px;
 }
 
 .menu li.active:first-child {
@@ -217,10 +214,19 @@ p {
     border-bottom-left-radius: 5px;
 }
 
-.menu li.active a, .menu li.active a:hover {
+.menu li.active a {
     color: #fff;
     font-size: 2.3em;
-    padding: 28px 27px 20px;
+    padding: 28px 27px 22px;
+}
+
+.menu li.active a.norm {
+    font-size: 2.2em;
+    line-height: 23px;
+}
+
+.menu li.active a:hover {
+    color: #fff;
 }
 
 .menu li a {

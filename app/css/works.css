@@ -1,0 +1,139 @@
+/*Styles from works*/
+.block-thumbnails {
+    margin: 13px 20px 20px 20px;
+    font-size: 0;
+}
+
+.thumb {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 183px;
+    margin-right: 20px;
+}
+
+.thumb .link-block {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.thumb .preview-img {
+    border: solid 2px #3BA8C0;
+    border-radius: 4px;
+    height: 125px;
+    width: 179px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 13px;
+}
+
+.thumb .preview-img img {
+    width: 100%;
+}
+
+.thumb .name-site {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.thumb .name-site a {
+    font-family: fira_sanslight_italic, serif;
+    font-size: 13px;
+    line-height: 13px;
+    color: #3ba8c0;
+    text-decoration: none;
+}
+
+.thumb .name-site a:hover {
+    text-decoration: underline;
+}
+
+.thumb .description {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    font-family: fira_sanslight, serif;
+    color: #4a545d;
+    margin-bottom: 49px;
+}
+
+.thumb .add-project {
+    font-size: 13px;
+    font-family: fira_sanslight;
+    color: #3ba8c0;
+    border: dashed 1px;
+    background: #edf8fc;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+    padding-top: 34px;
+}
+
+.thumb .add-project .icon-photo {
+
+    display: block;
+    margin: 0 auto;
+    background-position: -2px -115px;
+    width: 32px;
+    height: 32px;
+}
+
+.thumb .add-project .add-title{
+    display: block;
+}
+
+.thumb .add-project:hover {
+    background-color: #EEF0F2;
+}
+
+.eff-4-2 .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(1,108,164,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+    text-align: center;
+  -o-transition: all 0.4s linear 0s;
+  -moz-transition: all 0.4s linear 0s;
+  -webkit-transition: all 0.4s linear 0s;
+  -ms-transition: all 0.4s linear 0s;
+  transition: all 0.4s linear 0s;
+  -webkit-transform: rotateY(0deg) scale(0);
+  -o-transform: rotateY(0deg) scale(0);
+  -moz-transform: rotateY(0deg) scale(0);
+  -ms-transform: rotateY(0deg) scale(0);
+  transform: rotateY(0deg) scale(0);
+}
+
+.eff-4-2 .caption .title-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:50%;
+    display: block;
+    color: #fff;
+    margin: -10px 10px 0 10px;
+}
+
+.eff-4-2 .caption .title-wrap .title {
+    border: solid 2px #fff;
+    padding: 0px 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.eff-4-2:hover .caption {
+  -o-transform: rotateY(360deg) scale(1);
+  -moz-transform: rotateY(360deg) scale(1);
+  -ms-transform: rotateY(360deg) scale(1);
+  -webkit-transform: rotateY(360deg) scale(1);
+  transform: rotateY(360deg) scale(1);
+}
