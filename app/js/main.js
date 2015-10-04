@@ -1,3 +1,3 @@
 $(function(){
-	console.log('Файл main.js загружен!');
+	//console.log('Файл main.js загружен!');
 });
