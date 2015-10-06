@@ -18,12 +18,129 @@
     border-bottom: solid 9px #67dffa;
 }
 
+.upload-project .icon-close {
+    position: absolute;
+    top:10px;
+    right: 10px;
+    cursor: pointer;
+}
+.input-group {
+    position: relative;
+}
+.upload-project .addon{
+    display: block;
+    height: 39px;
+    line-height: 39px;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 52px;
+    z-index: 2;
+    background-color: #48cbe8;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+.upload-project .addon .icon-upload {
+    vertical-align: middle;
+}
+
 .upload-project .title h2 {
     color: #fff;
     font-size: 25px;
     font-family: fira_sansregular, sans-serif;
     margin: 0;
-    /*width: 362px;*/
     padding-left: 12px;
     font-weight: normal;
+    line-height: 44px;
+}
+
+.upload-project .body-form {
+    padding: 12px 21px 22px 21px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.upload-project label {
+    display: block;
+    color: #959aa8;
+    font-size: 17px;
+}
+
+.upload-project input,
+.upload-project textarea {
+    width: 100%;
+    font-size: 13px;
+    line-height: 13px;
+    height: 39px;
+    padding: 0 9px 0 9px;
+    border: 1px solid #48cbe8;
+    border-radius: 3px;
+}
+
+.upload-project textarea {
+    padding: 13px 9px;
+    height: 109px;
+}
+
+.upload-project input:focus, .upload-project textarea:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(72, 203, 232, 0.6);
+  outline: 0 none;
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
+
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.9s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.9s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.9s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.9s ease;}
+
+textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
+textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
+textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
+textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
+
+textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.9s ease;}
+textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.9s ease;}
+textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.9s ease;}
+textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.9s ease;}
+
+.animate {
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+.action-button {
+    padding: 0 27px 0 27px;
+    border-radius: 4px;
+    font-size: 19px;
+    color: #FFF;
+    line-height: 30px;
+}
+
+.blue {
+	background-color: #48cbe8;
+    border: none;
+    border-bottom: solid 2px #3ba8c0;
+}
+
+.blue:active {
+	background-color: #3ba8c0;
+}
+
+.action-button:active {
+    /*transform: translate(0px,2px);*/
+    /*-webkit-transform: translate(0px,2px);*/
+    margin-top: 2px;
 }
