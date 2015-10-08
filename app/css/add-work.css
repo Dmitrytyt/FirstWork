@@ -29,7 +29,7 @@
 }
 .upload-project .addon{
     display: block;
-    height: 39px;
+    height: 40px;
     line-height: 39px;
     pointer-events: none;
     position: absolute;
@@ -52,6 +52,20 @@
     vertical-align: middle;
 }
 
+.upload-project input[type="file"] {
+	height: 40px;
+    font-size: 80px;
+    border: 0 none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
 .upload-project .title h2 {
     color: #fff;
     font-size: 25px;
@@ -63,70 +77,92 @@
 }
 
 .upload-project .body-form {
-    padding: 12px 21px 22px 21px;
+    padding: 8px 21px 22px 21px;
 }
 
 .form-group {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
-.upload-project label {
+.form-group label {
     display: block;
     color: #959aa8;
     font-size: 17px;
 }
 
-.upload-project input,
-.upload-project textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     font-size: 13px;
-    line-height: 13px;
-    height: 39px;
+    height: 41px;
     padding: 0 9px 0 9px;
     border: 1px solid #48cbe8;
     border-radius: 3px;
 }
 
-.upload-project textarea {
-    padding: 13px 9px;
-    height: 109px;
+.form-group input.sm {
+    height: 30px;
 }
 
-.upload-project input:focus, .upload-project textarea:focus {
+.form-group.lg label {
+    font-size: 36px;
+    margin-bottom: 3px;
+    font-family: fira_sanslight, sans-serif;
+}
+
+.form-group.lg input {
+    height: 62px;
+    padding: 0 19px 0 19px;
+    font-size: 17px;
+}
+
+.form-group textarea {
+    padding: 9px;
+    height: 111px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(72, 203, 232, 0.6);
   outline: 0 none;
 }
 
-input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
-input::-moz-placeholder                {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
-input:-moz-placeholder                 {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
-input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; color: #48cbe8;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; color: #48cbe8;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; color: #48cbe8;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; color: #48cbe8;}
 
-input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.9s ease;}
-input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.9s ease;}
-input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.9s ease;}
-input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.9s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 
-textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
-textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
-textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
-textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.9s ease; color: #48cbe8;}
+textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; color: #48cbe8;}
+textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; color: #48cbe8;}
+textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; color: #48cbe8;}
+textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; color: #48cbe8;}
 
-textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.9s ease;}
-textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.9s ease;}
-textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.9s ease;}
-textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.9s ease;}
+textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 
 .animate {
 	transition: all 0.1s;
 	-webkit-transition: all 0.1s;
 }
 .action-button {
-    padding: 0 27px 0 27px;
+    padding: 0 28px 0 28px;
     border-radius: 4px;
     font-size: 19px;
     color: #FFF;
     line-height: 30px;
+}
+
+.bt-lg {
+    padding: 0 61px 0 61px;
+    font-size: 36px;
+    line-height: 50px;
+    border-radius: 6px;
 }
 
 .blue {
@@ -135,8 +171,22 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.9s 
     border-bottom: solid 2px #3ba8c0;
 }
 
+.bt-lg.blue {
+    border-bottom: solid 4px #3ba8c0;
+}
+
 .blue:active {
 	background-color: #3ba8c0;
+}
+
+.grey {
+	background-color: #849db5;
+    border: none;
+    border-bottom: solid 2px #687b8f;
+}
+
+.grey:active {
+	background-color: #687b8f;
 }
 
 .action-button:active {

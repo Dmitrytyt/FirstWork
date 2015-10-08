@@ -3,5 +3,8 @@
 @import url("../fonts/Proxima-Nova/proxima.css");
 @import url("master.css");
 @import url("works.css");
+@import url("add-work.css");
+@import url("contact.css");
+@import url("login.css");
 @import url("ie.css");
 /* end import/hide */

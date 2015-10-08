@@ -62,9 +62,60 @@
         <div class="container">
             <div class="content group">
                 <div class="main">
-                    <div class="island">
-                        <h1>У вас интересный проект? Напишите мне.</h1>
+                    <div class="island form-contact">
+                        <div class="title">
+                            <h1>У вас интересный проект? Напишите мне</h1>
+                        </div>
+                        <div class="wrap-contact group">
+                            <form class="add-contact">
+                                <div class="row group">
+                                    <div class="col-5">
+                                        <div class="form-group">
+                                            <label>Имя</label>
+                                            <input type="text" name="client-name" placeholder="Как к Вам обращаться">
+                                        </div>
+                                    </div>
+                                    <div class="col-5 pull-right ">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="email" name="email" placeholder="Куда мне писать">
+                                        </div>
+                                    </div>
 
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Сообщение</label>
+                                    <textarea name="message"  placeholder="Кратко в чем суть"></textarea>
+                                </div>
+                                <div class="form-group group">
+                                    <label>Введите код, указанный на картинке</label>
+
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="img-captcha">
+                                                <img src="img/cap.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-5 pull-right">
+                                            <input class="captcha sm" type="text" name="captcha" placeholder="Введите код">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <div class="row group">
+                                        <div class="col-5">
+                                            <button class="action-button shadow animate blue" type="submit">Отправить</button>
+                                        </div>
+                                        <div class="col-5 text-right pull-right">
+                                            <button class="action-button shadow animate grey" type="reset">Очистить</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="secondary">

@@ -335,6 +335,7 @@ p {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .island h2 {
@@ -571,6 +572,10 @@ a img {
 
 .text-central {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 /* self-clear floats*/
