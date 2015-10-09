@@ -90,6 +90,10 @@
     font-size: 17px;
 }
 
+.placeholder {
+    color: #48cbe8;
+}
+
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -100,8 +104,13 @@
     border-radius: 3px;
 }
 
+.form-group input {
+    line-height: 41px;
+}
+
 .form-group input.sm {
     height: 30px;
+    line-height: 30px;
 }
 
 .form-group.lg label {
@@ -114,6 +123,7 @@
     height: 62px;
     padding: 0 19px 0 19px;
     font-size: 17px;
+    line-height: 62px;
 }
 
 .form-group textarea {

@@ -9,4 +9,6 @@ $(function(){
             modalColor: '#58697a'
         });
     });
+
+    $( 'input[placeholder], textarea[placeholder]' ).placeholder();
 });
