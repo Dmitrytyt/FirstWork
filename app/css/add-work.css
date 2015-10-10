@@ -37,7 +37,6 @@
     text-align: center;
     top: 0;
     width: 52px;
-    z-index: 2;
     background-color: #48cbe8;
     -webkit-border-top-right-radius: 4px;
     -webkit-border-bottom-right-radius: 4px;
@@ -54,7 +53,7 @@
 
 .upload-project input[type="file"] {
 	height: 40px;
-    font-size: 80px;
+    font-size: 120px;
     border: 0 none;
     padding: 0;
     cursor: pointer;
@@ -63,7 +62,8 @@
     top: 0;
     left: 0;
     opacity: 0;
-    filter: alpha(opacity=0)
+    filter: alpha(opacity=0);
+    overflow: hidden;
 }
 
 .upload-project .title h2 {
