@@ -56,3 +56,11 @@
 .form-contact .captcha {
     margin-top: 23px;
 }
+
+/*! Red tooltip style */
+.qtip-my{
+	background-color: #f97e76;
+	border-color: #f97e76;
+	color: #fff;
+    font-size: 13px;
+}

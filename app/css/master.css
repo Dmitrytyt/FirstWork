@@ -578,6 +578,12 @@ a img {
     text-align: right;
 }
 
+.form-group.has-error input,
+.form-group.has-error textarea {
+    background: #fdd5d2;
+    border-color: #f97e76;
+}
+
 /* self-clear floats*/
 .group:after {
     content: ".";

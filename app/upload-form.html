@@ -1,5 +1,5 @@
 <div class="upload-project">
-    <form>
+    <form method="post">
         <div class="title">
             <h2>Добавление проекта</h2>
             <i class="icon icon-close pr-close"></i>
@@ -7,12 +7,14 @@
         <div class="body-form">
             <div class="form-group">
                 <label>Название проекта</label>
-                <input type="text" name="project-name" placeholder="Введите название">
+                <input type="text" name="project-name" qtip-position="left" qtip-content="введите название"
+                       placeholder="Введите название">
             </div>
             <div class="form-group">
                 <label>Картинка проекта</label>
                 <div class="input-group">
-                    <input id="inFake" type="text" name="image" placeholder="Загрузите изображение">
+                    <input id="inFake" type="text" qtip-position="left" qtip-content="изображение"
+                           name="image" placeholder="Загрузите изображение">
                     <span class="addon">
                         <i class="icon icon-upload"></i>
                     </span>
@@ -21,11 +23,13 @@
             </div>
             <div class="form-group">
                 <label>URL проекта</label>
-                <input type="text" name="url" placeholder="Добавьте ссылку">
+                <input type="text" name="url" qtip-position="left" qtip-content="ссылка на проект"
+                       placeholder="Добавьте ссылку">
             </div>
             <div class="form-group">
                 <label>Описание</label>
-                <textarea name="description"  placeholder="Пара слов о Вашем проекте"></textarea>
+                <textarea name="description" qtip-position="left" qtip-content="описание проекта"
+                          placeholder="Пара слов о Вашем проекте"></textarea>
             </div>
             <div class="form-group text-central ">
                 <button class="action-button shadow animate blue" type="submit">Добавить</button>
@@ -33,8 +37,3 @@
         </div>
     </form>
 </div>
-<script>
-    if($('html').hasClass('no-opacity')){
-        $('input, textarea', '.upload-project').placeholder();
-    }
-</script>

@@ -1,5 +1,23 @@
-$(function(){
-    $( '.add-project' ).on('click', function(e) {
+var Main = (function(){
+
+    // Инициализация модуля
+    var init = function (){
+        _setUpListners();
+        _setPlaceholder();
+    };
+
+    // Init placeholder
+    var _setPlaceholder = function(){
+        $( 'input[placeholder], textarea[placeholder]' ).placeholder();
+    };
+
+    // Прослушивает события
+    var _setUpListners = function(){
+        $( '.add-project' ).on('click', _showModal);
+    };
+
+    // Работает с модальным окном
+    var _showModal = function(e){
         e.preventDefault();
 
         $( '.pop-content' ).bPopup({
@@ -8,31 +26,17 @@ $(function(){
             loadUrl: 'upload-form.html',
             modalColor: '#58697a',
         });
-    });
-
-    $( 'input[placeholder], textarea[placeholder]' ).placeholder();
+    };
 
 
-    $( 'body' ).on('click', function(e){
-        var tar = $( e.target),
-            file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
+    // Возращает объект (публичные методы)
+    return {
+      init: init
+    }
 
-        if ( tar.is( "#inFile" ) ) {
-            var fakeIn = $( '#inFake');
-            tar.change(function(){
-                var file_name;
+})();
 
-                if( file_api && tar[ 0 ].files[ 0 ] ){
-                    file_name = tar[ 0 ].files[ 0 ].name;
-                } else {
-                    file_name = tar.val().replace( "C:\\fakepath\\", '' );
-                }
+// Вызов модуля
+Main.init();
 
-                if( ! file_name.length )return;
-                fakeIn.val(file_name);
-            });
-        }
 
-    });
-
-});
