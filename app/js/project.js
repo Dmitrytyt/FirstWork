@@ -76,7 +76,11 @@ var Project = (function(){
             if( ! file_name.length ) return;
             fakeIn.val(file_name);
             fakeIn.closest( '.form-group').removeClass( 'has-error' );
-            $( '#qtip-1').remove();
+            $( '.qtip:visible' ).each( function(i, element){
+                if( i === 1){
+                    $( element ).remove();
+                }
+            });
         });
     };
 
